@@ -1,0 +1,18 @@
+create database tareaunidad11;
+use tareaunidad11;
+
+create table tarea
+
+(id int not null auto_increment,
+nombre varchar(40)not null,
+apellido varchar(40)not null,
+edad tinyint(2) not null,
+fecha timestamp,
+provincia varchar(30),
+primary key(id));
+
+insert into tarea values (1,'elias','irusta',32,now(),'catamarca');
+insert into tarea values (2,'jony','bravo',31,now(),'buenos aires');
+insert into tarea values (3,'albert','einstein',76,now(),'tucuman');
+insert into tarea values (4,'jose','san martin',72,now(),'corrientes');
+insert into tarea values (5,'manuel','belgrano',50,now(),'san juan');
